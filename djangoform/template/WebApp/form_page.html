@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%extends "WebApp/index.html"%}
+{%block body_block%}
+    <div class="container">
+        <form method="POST">
+          <fieldset>
+            <legend>Fill Out the Form:</legend>
+          {{form.as_p}}
+          {%csrf_token%}
+          <input type="button" class="btn btn-primary" name="submit" value="Submit">
+        </form>
+    </div>
+  </fieldset>
+  {%endblock%}
